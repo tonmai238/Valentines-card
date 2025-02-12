@@ -1,0 +1,74 @@
+/* ตั้งค่าสีพื้นหลัง และจัดให้อยู่ตรงกลาง */
+body {
+    background-color: #f8d7da;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* กล่องครอบทั้งหมด */
+.card {
+    width: 400px;
+    min-height: 450px;
+    padding: 20px;
+    border: 5px solid red;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* กล่องแสดงรูปภาพ */
+.image-box {
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* รูปภาพ */
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* กล่องข้อความ */
+.message {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* เพิ่มพื้นหลังโปร่งแสง */
+    border-radius: 10px;
+    margin-top: 15px; /* ทำให้ไม่ทับรูป */
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ปุ่มถัดไป */
+.next-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.next-button:hover {
+    background-color: #e63e5a;
+}
